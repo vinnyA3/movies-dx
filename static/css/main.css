@@ -1,0 +1,82 @@
+/* BASE STYLES */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+/* UTILS */
+.clear {
+	clear: both;
+}
+
+
+/* LAYOUT */
+.fluid-wrapper {
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+
+.content-container {
+	width: inherit;
+	height: inherit;
+	padding: .5em;
+}
+
+/* NAV COMPONENT */
+.nav {
+	width: inherit;
+	padding: .3em;
+	background: blue;
+}
+
+.nav__brand {
+	font-weight: bold;
+	float: left;
+}
+
+.nav__menu {
+	float: right !important; /*yuck, try to figure out what is going on here*/
+}
+
+.inline-menu {
+	padding: 0;
+	margin: 0;
+}
+
+.inline-menu > li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.nav__hamburger {
+	display: none;
+}
+
+/* FOOTER */
+.main-footer {
+	width: 100%;
+	padding: .3em;
+  margin : 0;
+	background-color: blue;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-content {
+	display: inline-block;
+	padding: .1em;
+}
+
+.footer-content__banner {
+	font-weight: bold;
+}
