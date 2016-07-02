@@ -15,16 +15,24 @@ def movies():
 	interstellar = Movie('Interstellar', 'PG-13',
 						'Man was born on earth, but he was never meant to die here',
 						'https://d3ui957tjb5bqd.cloudfront.net/uploads/2014/11/interstellar-poster-2.jpg',
-						'https://www.youtube.com/watch?v=2LqzF5WauAw')
+						'https://www.youtube.com/embed/2LqzF5WauAw')
 
-	star_wars = Movie('The Force Awakens', 'PG-13',
-						'A new hope is born',
-						'http://www.comicgeekspeak.com/images/episodes/swtfapos.jpg',
-						'https://www.youtube.com/watch?v=sGbxmsDFVnE')
+	star_wars = Movie('Star Wars: The Force Awakens', 'PG-13',
+						'There has been an awakening...',
+						'http://3.bp.blogspot.com/-0_6xjfnrpzk/Vl7mYARXTsI/AAAAAAABNh4/0PoZ4-vN00s/s1600/Star%2BWars%2B-%2BThe%2BForce%2BAwakens%2Bby%2BBryan%2BMorton_1.jpg',
+						'https://www.youtube.com/embed/sGbxmsDFVnE')
+
+	social_network = Movie('The Social Network', 'PG-13',
+						'Facebook in its infancy',
+						'http://www.collegeadmissionsbible.com/wp-content/uploads/2013/03/0000the-social-network.jpg',
+						'https://www.youtube.com/embed/lB95KLmpLR4')
+
+
 
 	#add the movies as a dictionary to the movie list
 	movie_list.append(interstellar.__dict__)
 	movie_list.append(star_wars.__dict__)
+	movie_list.append(social_network.__dict__)
 	return json.dumps(movie_list)
 
 #Static Routes
