@@ -1,5 +1,5 @@
 
-	var ApiService = (function() {
+	define(['jquery'], function($) {
 		// send ajax request to get our movie data :D
 		function getMovies() {
 			//create deffered object
@@ -22,4 +22,4 @@
 				get: getMovies
 		}
 
-	})(); // ./ApiService
+	}); // ./ApiService
