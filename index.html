@@ -34,17 +34,29 @@
 
 				</nav>
 
-
 			</header>
 
 			<main class="content-container">
-				<div class="movies"></div>
+				<div class="movies">
+					<div class="modal">
+						<div class="modal-content">
+    					<span class="close">x</span>
+							<p class="modal-content__title content"></p>
+							<p class="modal-content__rating content"></p>
+							<p class="modal-content__description content"></p>
+							<!-- <p class="modal-content__poster_image content"></p> -->
+							<iframe
+											class="modal-content__youtube_url content">
+							</iframe>
+  					</div>
+					</div>
+				</div>
 			</main>
 
 			<footer class="main-footer">
 				<div class="footer-content">
 					<div class="footer-content__banner">
-						<p>Made with <i class="banner-heart fa fa-heart"></i> </p>
+						<p>Made with <i class="banner-heart fa fa-heart"></i></p>
 					</div>
 				</div>
 			</footer>
@@ -52,11 +64,6 @@
 		</div> <! -- ./.wrapper -->
 
 	<!-- javascripts -->
-	<!-- jquery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<!-- api service -->
-	<script src="apiService.js"></script>
-	<!-- main js -->
-	<script src="main.js"></script>
+	<script data-main="app" src="require.js"></script>
 	</body>
 </html>
