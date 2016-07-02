@@ -1,4 +1,6 @@
-(function($) {
+
+define(['jquery', 'apiService', 'modal'], function($, ApiService, Modal) {
+
 	var model = {
 		//initialize the empty array that will take in the movie date returned
 		//from the server
@@ -57,6 +59,13 @@
 				movie_card.appendChild(movie_card_img);
 				movie_card.setAttribute('data-index', i);
 				movie_card.className = 'movie-card';
+				//add event lister to the movie_card
+				(function(i) {
+					movie_card.addEventListener('click', function() {
+						var content_modal = new Modal.Modal(movies[i]);
+						content_modal.open();
+					});
+				})(i);
 				//append the movie card to the movie container
 				movie_el.appendChild(movie_card);
 			}
@@ -67,4 +76,4 @@
   //initialize controller
 	controller.init();
 
-})(jQuery);
+}); // ./require
