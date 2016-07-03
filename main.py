@@ -10,10 +10,15 @@ def serve_home():
 
 @route('/movies')
 def movies():
-	#create an empty movie list that will be returned as json via json dumps
+	# create an empty movie list that will be returned as json via json dumps
 	movie_list = []
 
-    #some urls are long, so they exceed recommended line space allocation 
+    # some urls are long, so they exceed recommended line space allocation
+
+	# To add a movie, create a new instance of Movie and add the following:
+	# Movie title, movie description, link to movie poster image, and youtube url
+	# Note!! The youtube url should be an embedded movie link
+	# Note!  Append the movie instance to the movie_list array! *Shown below
 	interstellar = Movie('Interstellar', 'PG-13',
 						'Man was born on earth, but he was never meant to die here',
 						'https://d3ui957tjb5bqd.cloudfront.net/uploads/2014/11/interstellar-poster-2.jpg',
