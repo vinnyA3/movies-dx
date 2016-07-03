@@ -35,6 +35,10 @@ a:hover {
 	clear: both;
 }
 
+.social:hover {
+	color: rgb(229, 120, 11);
+}
+
 
 /* LAYOUT */
 .fluid-wrapper {
@@ -88,9 +92,9 @@ a:hover {
 	list-style-type: none;
 }
 
-.inline-menu > li:not(:last-child) {
+/* .inline-menu > li:not(:last-child) {
 	margin-right: 1em;
-}
+} */
 
 .nav__hamburger {
 	display: none;
@@ -98,17 +102,20 @@ a:hover {
 
 /* MOVIE CARD */
 .movie-card {
-	width: 25%;
+	width: 50%;
 	height: 16%;
-	margin: .4em;
 	padding: .2em;
 	text-align: center;
 	display: inline-block;
 }
 
 .movie-card__image {
-	width: 100%;
+	width: 90%;
 	height:100%;
+}
+
+.movie-card__image:hover {
+	cursor: pointer;
 }
 
 /*MODAL */
@@ -213,5 +220,11 @@ a:hover {
 @media screen and (min-width: 1000px) {
 	.movie-card {
 		height: 300px;
+	}
+}
+
+@media screen and (min-width: 470px) {
+	.movie-card {
+		width: 25%;
 	}
 }
