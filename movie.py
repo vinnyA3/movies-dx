@@ -2,8 +2,9 @@ from video import Video
 
 class Movie(Video):
 	""" This class is used to make a new movie entry.
-		A movie will contain a title, rating, poster_image, description, and
-		a youtube_url
+		A movie will contain a poster_image, description, and
+		a youtube_url.
+		Note: title and rating are set via the parent constructor
 	"""
 
 	def __init__(self, title, rating, description, poster_image, youtube_url):

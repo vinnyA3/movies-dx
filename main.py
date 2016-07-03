@@ -10,8 +10,10 @@ def serve_home():
 
 @route('/movies')
 def movies():
+	#create an empty movie list that will be returned as json via json dumps
 	movie_list = []
 
+    #some urls are long, so they exceed recommended line space allocation 
 	interstellar = Movie('Interstellar', 'PG-13',
 						'Man was born on earth, but he was never meant to die here',
 						'https://d3ui957tjb5bqd.cloudfront.net/uploads/2014/11/interstellar-poster-2.jpg',
@@ -33,9 +35,10 @@ def movies():
 	movie_list.append(interstellar.__dict__)
 	movie_list.append(star_wars.__dict__)
 	movie_list.append(social_network.__dict__)
+	#return json
 	return json.dumps(movie_list)
 
-#Static Routes
+#Static Routes - used for static files and assets
 @get('/<filename:re:.*\.js>')
 def javascripts(filename):
 	return static_file(filename, root='static/js')
